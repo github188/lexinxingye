@@ -131,6 +131,7 @@ void task_peripheral_handling_entry(void *para)
 			case MSG_PERIPHERAL_TASK_BROWSE_INIT:
 				//DBG_PRINT("ERRR2\r\n");
 				browse_init_cnt=96;
+				
 				break;
 			case MSG_PERIPHERAL_TASK_DISPLAY_PLEASE_INSERT_SDC:
 				display_insert_sdc_cnt = 0x006f;
