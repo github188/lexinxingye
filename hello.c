@@ -39,10 +39,20 @@ typedef struct my_AviEncVidPara_s
     
 }my_AviEncVidPara_t;
 
+typedef enum
+{
+	CTRL = 1,
+	SHIFT = 2,
+	ALT = 4,
+}operate;
+
 
 int main(int argc, char **argv)
 {
 	my_AviEncVidPara_t myAviEncPra;
+	operate myop = CTRL;
 	__msg("sizeof(myAviEncPra = %d)\n", sizeof(myAviEncPra));
+	__msg("%d, %d\n", sizeof(myop),myop | SHIFT | ALT);
+	
 	return 0;
 }
