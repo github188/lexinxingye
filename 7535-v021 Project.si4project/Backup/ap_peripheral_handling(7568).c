@@ -604,7 +604,7 @@ void set_led_mode(LED_MODE_ENUM mode)
 	prev_mode			= mode;
 }
 
-//set led_mainled_on status
+
 void led_mainled_on(void)
 {
 #if 0
