@@ -109,12 +109,12 @@ CODEC_START_STATUS video_encode_preview_start(VIDEO_ARGUMENT arg)
     my_pAviEncVidPara->encode_height = arg.TargetHeight;
 	my_pAviEncVidPara->sensor_do_init = arg.bSensorDoInit;
 	my_pAviEncVidPara->enter_ap_mode = arg.bEnterApMode;
-	DBG_PRINT("xxxxxxxxxxxxxxxxxxxxxxxx\r\n");
+DBG_PRINT("xxxxxxxxxxxxxxxxxxxxxxxx\r\n");
    	nRet = vid_enc_preview_start();
    	if(nRet < 0)
    	{
    	
-		DBG_PRINT("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\r\n");
+	DBG_PRINT("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\r\n");
    		return CODEC_START_STATUS_ERROR_MAX;
    	}
     
