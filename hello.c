@@ -49,10 +49,23 @@ typedef enum
 
 int main(int argc, char **argv)
 {
-	my_AviEncVidPara_t myAviEncPra;
+	//my_AviEncVidPara_t myAviEncPra;
 	operate myop = CTRL;
-	__msg("sizeof(myAviEncPra = %d)\n", sizeof(myAviEncPra));
-	__msg("%d, %d\n", sizeof(myop),myop | SHIFT | ALT);
+	//__msg("sizeof(myAviEncPra = %d)\n", sizeof(myAviEncPra));
+	//__msg("%d, %d\n", sizeof(myop),myop | SHIFT | ALT);
+
+	myop = 0x06;
+	__msg("(myop & CTRL):%d\n", (myop & CTRL));
+	__msg("(myop & SHIFT):%d\n", (myop & SHIFT));
+	__msg("(myop & ALT):%d\n", (myop & ALT));
 	
+	if((myop & CTRL)&&(myop & SHIFT)&&(myop & ALT))
+	{
+		__msg("Continue press ctrl, shilt and alt key\n");
+	}
+	else
+	{
+		__msg("Break\n");
+	}
 	return 0;
 }

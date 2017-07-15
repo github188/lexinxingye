@@ -1,22 +1,4 @@
----- led_green_on Matches (21 in 5 files) ----
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : //			led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : 			led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : 				led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : //				led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : //				led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : //			led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : //				led_green_on();
-set_led_mode in ap_peripheral_handling.c (application\task_peripheral_handling\src) : //			led_green_on();
-ap_peripheral_handling.c (application\task_peripheral_handling\src) line 579 : void led_green_on(void)
-LED_blanking_isr in ap_peripheral_handling.c (application\task_peripheral_handling\src) : 			 	 led_green_on();
-LED_blanking_isr in ap_peripheral_handling.c (application\task_peripheral_handling\src) : 		 	led_green_on();
-LED_blanking_isr in ap_peripheral_handling.c (application\task_peripheral_handling\src) : 				 	led_green_on();
-ap_peripheral_handling.h (application\task_peripheral_handling\inc) line 52 : extern void led_green_on(void);
-ap_video_record.c (application\task_state_handling\state_video_record\src) line 37 : extern void led_green_on(void);
-ap_video_record_func_key_active in ap_video_record.c (application\task_state_handling\state_video_record\src) : 			//led_green_on();
-state_video_record.c (application\task_state_handling\state_video_record\src) line 151 : extern void led_green_on(void);
-state_video_record_entry in state_video_record.c (application\task_state_handling\state_video_record\src) : //							  led_green_on();
-state_video_record_entry in state_video_record.c (application\task_state_handling\state_video_record\src) : //						      led_green_on();
-task_peripheral_handling.c (application\task_peripheral_handling\src) line 52 : extern void led_green_on(void);
-task_peripheral_handling_entry in task_peripheral_handling.c (application\task_peripheral_handling\src) : 			                     led_green_on();	
-task_peripheral_handling_entry in task_peripheral_handling.c (application\task_peripheral_handling\src) : 			             //        led_green_on();	
+---- jpeg_out_buffer_large_size Matches (3 in 2 files) ----
+my_avi_encoder_state.h (application\task_avi_encoder\inc) line 16 : extern INT32U jpeg_out_buffer_large_size;
+video_encoder.c (application\mini_dvr_api\src) line 4 : INT32U jpeg_out_buffer_large_size;
+video_encode_entrance in video_encoder.c (application\mini_dvr_api\src) : 		jpeg_out_buffer_large_size =		JPEG_OUT_BUFFER_LARGE_SIZE;
